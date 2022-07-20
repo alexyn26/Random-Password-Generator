@@ -27,4 +27,8 @@ The user is prompted to answer questions that will tell the program the length a
 <img width="1512" alt="Screen Shot 2022-07-20 at 3 15 39 PM" src="https://user-images.githubusercontent.com/107084291/180074324-ec557936-e58d-4008-a77f-5dfa2fa6ed72.png">
 
 
+https://alexyn26.github.io/Random-Password-Generator/
+
+https://github.com/alexyn26/Random-Password-Generator.git
+
 ##Credit to UTA Coding bootcamp for the starter code
