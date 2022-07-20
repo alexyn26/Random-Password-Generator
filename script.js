@@ -9,7 +9,13 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 var generatePassword = function () {
 
+
   var passwordLength = window.prompt("How many characters do you want your password to be? Choose between 8 and 128 characters.");
+  while (passwordLength === null){
+
+      window.alert("A password will not be generated, thank you.");
+      return;    
+  }
   if (passwordLength <= 7 && passwordLength != 0) {
     window.alert("Your password is too short.");
     passwordLength = window.prompt("How many characters do you want your password to be? Choose between 8 and 128 characters.");
@@ -26,6 +32,7 @@ var generatePassword = function () {
   else {
     window.alert("Your password will be " + passwordLength + " characters in length.");
   }
+ 
 
   var includeUpperCase = window.confirm("Would you like upper case letters in your password? Click Ok to confirm or Cancel to deny.");
   if (includeUpperCase == true) {
@@ -180,9 +187,10 @@ function writePassword() {
 
 }
 // Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
 
 
-
+generateBtn.addEventListener("doubleclick", "");
 
 
